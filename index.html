@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Untitled1</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>practica3</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -11259,12 +11259,12 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [49]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [74]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Leer el archivo</span>
-<span class="n">fallecidos</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"https://github.com/xavimauricio12/prac3/raw/refs/heads/main/fallecidosCOVID.csv"</span><span class="p">)</span>
-<span class="n">fallecidos</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Leer el archivo fallecidosCOVID.csv</span>
+<span class="n">covid19</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"https://github.com/pauvas20210715/PC3/raw/main/fallecidosCOVID.csv"</span><span class="p">)</span>
+<span class="n">covid19</span>
 </pre></div>
 </div>
 </div>
@@ -11275,9 +11275,9 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[49]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[74]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div class="colab-df-container" id="df-1e2d2172-c126-4c44-9107-0cd301c4a756">
+<div class="colab-df-container" id="df-9deb476c-01a1-4f8a-b6b6-f686281026e3">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -11350,7 +11350,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 <div class="colab-df-buttons">
 <div class="colab-df-container">
-<button class="colab-df-convert" onclick="convertToInteractive('df-1e2d2172-c126-4c44-9107-0cd301c4a756')" style="display:none;" title="Convert this dataframe to an interactive table.">
+<button class="colab-df-convert" onclick="convertToInteractive('df-9deb476c-01a1-4f8a-b6b6-f686281026e3')" style="display:none;" title="Convert this dataframe to an interactive table.">
 <svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
 <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
 </svg>
@@ -11397,12 +11397,12 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
   </style>
 <script>
       const buttonEl =
-        document.querySelector('#df-1e2d2172-c126-4c44-9107-0cd301c4a756 button.colab-df-convert');
+        document.querySelector('#df-9deb476c-01a1-4f8a-b6b6-f686281026e3 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-1e2d2172-c126-4c44-9107-0cd301c4a756');
+        const element = document.querySelector('#df-9deb476c-01a1-4f8a-b6b6-f686281026e3');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -11420,8 +11420,8 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
       }
     </script>
 </div>
-<div id="df-b900b45f-91b3-4bed-8ab1-76ec742ca8b2">
-<button class="colab-df-quickchart" onclick="quickchart('df-b900b45f-91b3-4bed-8ab1-76ec742ca8b2')" style="display:none;" title="Suggest charts">
+<div id="df-2fbdfe19-f2ed-4f42-b9fe-7954d5786f14">
+<button class="colab-df-quickchart" onclick="quickchart('df-2fbdfe19-f2ed-4f42-b9fe-7954d5786f14')" style="display:none;" title="Suggest charts">
 <svg height="24px" viewbox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
 <g>
 <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></path>
@@ -11534,13 +11534,13 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
     }
     (() => {
       let quickchartButtonEl =
-        document.querySelector('#df-b900b45f-91b3-4bed-8ab1-76ec742ca8b2 button');
+        document.querySelector('#df-2fbdfe19-f2ed-4f42-b9fe-7954d5786f14 button');
       quickchartButtonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
     })();
   </script>
 </div>
-<div id="id_a58ec5ca-d89d-4fbe-984d-9c1de30431ee">
+<div id="id_7b3349fa-ada4-4277-90f7-90e9f71be098">
 <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -11572,7 +11572,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
         fill: #FFFFFF;
       }
     </style>
-<button class="colab-df-generate" onclick="generateWithVariable('fallecidos')" style="display:none;" title="Generate code using this dataframe.">
+<button class="colab-df-generate" onclick="generateWithVariable('covid19')" style="display:none;" title="Generate code using this dataframe.">
 <svg height="24px" viewbox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
 <path d="M7,19H8.4L18.45,9,17,7.55,7,17.6ZM5,21V16.75L18.45,3.32a2,2,0,0,1,2.83,0l1.4,1.43a1.91,1.91,0,0,1,.58,1.4,1.91,1.91,0,0,1-.58,1.4L9.25,21ZM18.45,9,17,7.55Zm-12,3A5.31,5.31,0,0,0,4.9,8.1,5.31,5.31,0,0,0,1,6.5,5.31,5.31,0,0,0,4.9,4.9,5.31,5.31,0,0,0,6.5,1,5.31,5.31,0,0,0,8.1,4.9,5.31,5.31,0,0,0,12,6.5,5.46,5.46,0,0,0,6.5,12Z"></path>
 </svg>
@@ -11580,12 +11580,12 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_a58ec5ca-d89d-4fbe-984d-9c1de30431ee button.colab-df-generate');
+        document.querySelector('#id_7b3349fa-ada4-4277-90f7-90e9f71be098 button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       buttonEl.onclick = () => {
-        google.colab.notebook.generateWithVariable('fallecidos');
+        google.colab.notebook.generateWithVariable('covid19');
       }
       })();
     </script>
@@ -11601,12 +11601,12 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [50]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [75]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#separar columnas</span>
-<span class="n">fallecidos</span><span class="p">[[</span><span class="s1">'corte'</span><span class="p">,</span><span class="s1">'fallecimiento'</span><span class="p">,</span> <span class="s1">'edad'</span><span class="p">,</span> <span class="s1">'sexo'</span><span class="p">,</span> <span class="s1">'criterio'</span><span class="p">,</span> <span class="s1">'dep'</span><span class="p">,</span> <span class="s1">'prov'</span><span class="p">,</span> <span class="s1">'dist'</span><span class="p">,</span> <span class="s1">'ubigeo'</span><span class="p">,</span> <span class="s1">'uuid'</span><span class="p">]]</span> <span class="o">=</span><span class="n">fallecidos</span><span class="p">[</span><span class="s1">'FECHA_CORTE;FECHA_FALLECIMIENTO;EDAD_DECLARADA;SEXO;CLASIFICACION_DEF;DEPARTAMENTO;PROVINCIA;DISTRITO;UBIGEO;UUID'</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">';'</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">fallecidos</span>
+<span class="n">covid19</span><span class="p">[[</span><span class="s1">'corte'</span><span class="p">,</span><span class="s1">'fallecimiento'</span><span class="p">,</span> <span class="s1">'edad'</span><span class="p">,</span> <span class="s1">'sexo'</span><span class="p">,</span> <span class="s1">'criterio'</span><span class="p">,</span> <span class="s1">'dep'</span><span class="p">,</span> <span class="s1">'prov'</span><span class="p">,</span> <span class="s1">'dist'</span><span class="p">,</span> <span class="s1">'ubigeo'</span><span class="p">,</span> <span class="s1">'uuid'</span><span class="p">]]</span> <span class="o">=</span><span class="n">fallecidos</span><span class="p">[</span><span class="s1">'FECHA_CORTE;FECHA_FALLECIMIENTO;EDAD_DECLARADA;SEXO;CLASIFICACION_DEF;DEPARTAMENTO;PROVINCIA;DISTRITO;UBIGEO;UUID'</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">';'</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">covid19</span>
 </pre></div>
 </div>
 </div>
@@ -11617,9 +11617,9 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[50]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[75]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div class="colab-df-container" id="df-43d58fd7-67e4-4a4f-95d5-55b90cb6b769">
+<div class="colab-df-container" id="df-19aa6d73-3892-440f-94b8-04d6c64dd027">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -11812,7 +11812,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 <div class="colab-df-buttons">
 <div class="colab-df-container">
-<button class="colab-df-convert" onclick="convertToInteractive('df-43d58fd7-67e4-4a4f-95d5-55b90cb6b769')" style="display:none;" title="Convert this dataframe to an interactive table.">
+<button class="colab-df-convert" onclick="convertToInteractive('df-19aa6d73-3892-440f-94b8-04d6c64dd027')" style="display:none;" title="Convert this dataframe to an interactive table.">
 <svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
 <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
 </svg>
@@ -11859,12 +11859,12 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
   </style>
 <script>
       const buttonEl =
-        document.querySelector('#df-43d58fd7-67e4-4a4f-95d5-55b90cb6b769 button.colab-df-convert');
+        document.querySelector('#df-19aa6d73-3892-440f-94b8-04d6c64dd027 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-43d58fd7-67e4-4a4f-95d5-55b90cb6b769');
+        const element = document.querySelector('#df-19aa6d73-3892-440f-94b8-04d6c64dd027');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -11882,8 +11882,8 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
       }
     </script>
 </div>
-<div id="df-0dfe816b-87c6-4cf7-8abc-7b9e07e29101">
-<button class="colab-df-quickchart" onclick="quickchart('df-0dfe816b-87c6-4cf7-8abc-7b9e07e29101')" style="display:none;" title="Suggest charts">
+<div id="df-47dacc07-60de-4990-8d6f-68aca6b10235">
+<button class="colab-df-quickchart" onclick="quickchart('df-47dacc07-60de-4990-8d6f-68aca6b10235')" style="display:none;" title="Suggest charts">
 <svg height="24px" viewbox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
 <g>
 <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></path>
@@ -11996,13 +11996,13 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
     }
     (() => {
       let quickchartButtonEl =
-        document.querySelector('#df-0dfe816b-87c6-4cf7-8abc-7b9e07e29101 button');
+        document.querySelector('#df-47dacc07-60de-4990-8d6f-68aca6b10235 button');
       quickchartButtonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
     })();
   </script>
 </div>
-<div id="id_3a64a102-01a1-48ec-ab1f-7e04403fd976">
+<div id="id_f1cca5e3-8ab4-43ac-8de2-1af228896437">
 <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -12034,7 +12034,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
         fill: #FFFFFF;
       }
     </style>
-<button class="colab-df-generate" onclick="generateWithVariable('fallecidos')" style="display:none;" title="Generate code using this dataframe.">
+<button class="colab-df-generate" onclick="generateWithVariable('covid19')" style="display:none;" title="Generate code using this dataframe.">
 <svg height="24px" viewbox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
 <path d="M7,19H8.4L18.45,9,17,7.55,7,17.6ZM5,21V16.75L18.45,3.32a2,2,0,0,1,2.83,0l1.4,1.43a1.91,1.91,0,0,1,.58,1.4,1.91,1.91,0,0,1-.58,1.4L9.25,21ZM18.45,9,17,7.55Zm-12,3A5.31,5.31,0,0,0,4.9,8.1,5.31,5.31,0,0,0,1,6.5,5.31,5.31,0,0,0,4.9,4.9,5.31,5.31,0,0,0,6.5,1,5.31,5.31,0,0,0,8.1,4.9,5.31,5.31,0,0,0,12,6.5,5.46,5.46,0,0,0,6.5,12Z"></path>
 </svg>
@@ -12042,12 +12042,12 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_3a64a102-01a1-48ec-ab1f-7e04403fd976 button.colab-df-generate');
+        document.querySelector('#id_f1cca5e3-8ab4-43ac-8de2-1af228896437 button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       buttonEl.onclick = () => {
-        google.colab.notebook.generateWithVariable('fallecidos');
+        google.colab.notebook.generateWithVariable('covid19');
       }
       })();
     </script>
@@ -12063,12 +12063,12 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [51]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [76]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#eliminar columna 1</span>
-<span class="n">fallecidos</span> <span class="o">=</span> <span class="n">fallecidos</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="s1">'FECHA_CORTE;FECHA_FALLECIMIENTO;EDAD_DECLARADA;SEXO;CLASIFICACION_DEF;DEPARTAMENTO;PROVINCIA;DISTRITO;UBIGEO;UUID'</span><span class="p">)</span>
-<span class="n">fallecidos</span>
+<span class="n">covid19</span> <span class="o">=</span> <span class="n">covid19</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="s1">'FECHA_CORTE;FECHA_FALLECIMIENTO;EDAD_DECLARADA;SEXO;CLASIFICACION_DEF;DEPARTAMENTO;PROVINCIA;DISTRITO;UBIGEO;UUID'</span><span class="p">)</span>
+<span class="n">covid19</span>
 </pre></div>
 </div>
 </div>
@@ -12079,9 +12079,9 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[51]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[76]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div class="colab-df-container" id="df-228024ed-acbf-49e0-bba0-69664c0a8db0">
+<div class="colab-df-container" id="df-9f892ad4-3546-414e-8603-a69ba34a2a0a">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -12262,7 +12262,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 <div class="colab-df-buttons">
 <div class="colab-df-container">
-<button class="colab-df-convert" onclick="convertToInteractive('df-228024ed-acbf-49e0-bba0-69664c0a8db0')" style="display:none;" title="Convert this dataframe to an interactive table.">
+<button class="colab-df-convert" onclick="convertToInteractive('df-9f892ad4-3546-414e-8603-a69ba34a2a0a')" style="display:none;" title="Convert this dataframe to an interactive table.">
 <svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
 <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
 </svg>
@@ -12309,12 +12309,12 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
   </style>
 <script>
       const buttonEl =
-        document.querySelector('#df-228024ed-acbf-49e0-bba0-69664c0a8db0 button.colab-df-convert');
+        document.querySelector('#df-9f892ad4-3546-414e-8603-a69ba34a2a0a button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-228024ed-acbf-49e0-bba0-69664c0a8db0');
+        const element = document.querySelector('#df-9f892ad4-3546-414e-8603-a69ba34a2a0a');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -12332,8 +12332,8 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
       }
     </script>
 </div>
-<div id="df-0479d3a1-84db-4640-8d59-6bc4aa9ee0c2">
-<button class="colab-df-quickchart" onclick="quickchart('df-0479d3a1-84db-4640-8d59-6bc4aa9ee0c2')" style="display:none;" title="Suggest charts">
+<div id="df-73798c9a-9681-43f5-a015-924f094018f4">
+<button class="colab-df-quickchart" onclick="quickchart('df-73798c9a-9681-43f5-a015-924f094018f4')" style="display:none;" title="Suggest charts">
 <svg height="24px" viewbox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
 <g>
 <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></path>
@@ -12446,13 +12446,13 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
     }
     (() => {
       let quickchartButtonEl =
-        document.querySelector('#df-0479d3a1-84db-4640-8d59-6bc4aa9ee0c2 button');
+        document.querySelector('#df-73798c9a-9681-43f5-a015-924f094018f4 button');
       quickchartButtonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
     })();
   </script>
 </div>
-<div id="id_61503197-595f-4ae5-a432-8f9eed6317df">
+<div id="id_890156ca-c4f2-4816-b3b5-c8cb0548d89d">
 <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -12484,7 +12484,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
         fill: #FFFFFF;
       }
     </style>
-<button class="colab-df-generate" onclick="generateWithVariable('fallecidos')" style="display:none;" title="Generate code using this dataframe.">
+<button class="colab-df-generate" onclick="generateWithVariable('covid19')" style="display:none;" title="Generate code using this dataframe.">
 <svg height="24px" viewbox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
 <path d="M7,19H8.4L18.45,9,17,7.55,7,17.6ZM5,21V16.75L18.45,3.32a2,2,0,0,1,2.83,0l1.4,1.43a1.91,1.91,0,0,1,.58,1.4,1.91,1.91,0,0,1-.58,1.4L9.25,21ZM18.45,9,17,7.55Zm-12,3A5.31,5.31,0,0,0,4.9,8.1,5.31,5.31,0,0,0,1,6.5,5.31,5.31,0,0,0,4.9,4.9,5.31,5.31,0,0,0,6.5,1,5.31,5.31,0,0,0,8.1,4.9,5.31,5.31,0,0,0,12,6.5,5.46,5.46,0,0,0,6.5,12Z"></path>
 </svg>
@@ -12492,12 +12492,12 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_61503197-595f-4ae5-a432-8f9eed6317df button.colab-df-generate');
+        document.querySelector('#id_890156ca-c4f2-4816-b3b5-c8cb0548d89d button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       buttonEl.onclick = () => {
-        google.colab.notebook.generateWithVariable('fallecidos');
+        google.colab.notebook.generateWithVariable('covid19');
       }
       })();
     </script>
@@ -12513,13 +12513,13 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [52]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [77]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#eliminar las columnas 'corte' y 'uuid'</span>
 <span class="n">bye</span><span class="o">=</span><span class="p">[</span><span class="s1">'corte'</span><span class="p">,</span> <span class="s1">'uuid'</span><span class="p">]</span>
-<span class="n">fallecidos</span> <span class="o">=</span> <span class="n">fallecidos</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="n">bye</span><span class="p">)</span>
-<span class="n">fallecidos</span>
+<span class="n">covid19</span> <span class="o">=</span> <span class="n">covid19</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="n">bye</span><span class="p">)</span>
+<span class="n">covid19</span>
 </pre></div>
 </div>
 </div>
@@ -12530,9 +12530,9 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[52]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[77]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div class="colab-df-container" id="df-a8feca3d-b65b-4e55-a73d-54f3b8d8f8b9">
+<div class="colab-df-container" id="df-14d9b9c2-cc94-4bcb-b56c-3f2a44c6fdd2">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -12689,7 +12689,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 <div class="colab-df-buttons">
 <div class="colab-df-container">
-<button class="colab-df-convert" onclick="convertToInteractive('df-a8feca3d-b65b-4e55-a73d-54f3b8d8f8b9')" style="display:none;" title="Convert this dataframe to an interactive table.">
+<button class="colab-df-convert" onclick="convertToInteractive('df-14d9b9c2-cc94-4bcb-b56c-3f2a44c6fdd2')" style="display:none;" title="Convert this dataframe to an interactive table.">
 <svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
 <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
 </svg>
@@ -12736,12 +12736,12 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
   </style>
 <script>
       const buttonEl =
-        document.querySelector('#df-a8feca3d-b65b-4e55-a73d-54f3b8d8f8b9 button.colab-df-convert');
+        document.querySelector('#df-14d9b9c2-cc94-4bcb-b56c-3f2a44c6fdd2 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-a8feca3d-b65b-4e55-a73d-54f3b8d8f8b9');
+        const element = document.querySelector('#df-14d9b9c2-cc94-4bcb-b56c-3f2a44c6fdd2');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -12759,8 +12759,8 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
       }
     </script>
 </div>
-<div id="df-2c19f3c6-8d1f-4547-9e7b-623cee243413">
-<button class="colab-df-quickchart" onclick="quickchart('df-2c19f3c6-8d1f-4547-9e7b-623cee243413')" style="display:none;" title="Suggest charts">
+<div id="df-a29f15a1-0c8c-4fe3-9f21-b2b8b873104d">
+<button class="colab-df-quickchart" onclick="quickchart('df-a29f15a1-0c8c-4fe3-9f21-b2b8b873104d')" style="display:none;" title="Suggest charts">
 <svg height="24px" viewbox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
 <g>
 <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></path>
@@ -12873,13 +12873,13 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
     }
     (() => {
       let quickchartButtonEl =
-        document.querySelector('#df-2c19f3c6-8d1f-4547-9e7b-623cee243413 button');
+        document.querySelector('#df-a29f15a1-0c8c-4fe3-9f21-b2b8b873104d button');
       quickchartButtonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
     })();
   </script>
 </div>
-<div id="id_4d81ec3a-c4d4-4265-9409-edfb1cc1bb20">
+<div id="id_a549fffe-51f6-49f9-a9d4-01f9ee02ef76">
 <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -12911,7 +12911,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
         fill: #FFFFFF;
       }
     </style>
-<button class="colab-df-generate" onclick="generateWithVariable('fallecidos')" style="display:none;" title="Generate code using this dataframe.">
+<button class="colab-df-generate" onclick="generateWithVariable('covid19')" style="display:none;" title="Generate code using this dataframe.">
 <svg height="24px" viewbox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
 <path d="M7,19H8.4L18.45,9,17,7.55,7,17.6ZM5,21V16.75L18.45,3.32a2,2,0,0,1,2.83,0l1.4,1.43a1.91,1.91,0,0,1,.58,1.4,1.91,1.91,0,0,1-.58,1.4L9.25,21ZM18.45,9,17,7.55Zm-12,3A5.31,5.31,0,0,0,4.9,8.1,5.31,5.31,0,0,0,1,6.5,5.31,5.31,0,0,0,4.9,4.9,5.31,5.31,0,0,0,6.5,1,5.31,5.31,0,0,0,8.1,4.9,5.31,5.31,0,0,0,12,6.5,5.46,5.46,0,0,0,6.5,12Z"></path>
 </svg>
@@ -12919,12 +12919,12 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_4d81ec3a-c4d4-4265-9409-edfb1cc1bb20 button.colab-df-generate');
+        document.querySelector('#id_a549fffe-51f6-49f9-a9d4-01f9ee02ef76 button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       buttonEl.onclick = () => {
-        google.colab.notebook.generateWithVariable('fallecidos');
+        google.colab.notebook.generateWithVariable('covid19');
       }
       })();
     </script>
@@ -12940,12 +12940,12 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [54]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [78]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Convertir la columna de fecha a datetime</span>
-<span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">fallecidos</span><span class="p">[</span><span class="s1">'fallecimiento'</span><span class="p">])</span>
-<span class="n">fallecidos</span><span class="p">[</span><span class="s1">'fecha'</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">fallecidos</span><span class="p">[</span><span class="s1">'fallecimiento'</span><span class="p">])</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">covid19</span><span class="p">[</span><span class="s1">'fallecimiento'</span><span class="p">])</span>
+<span class="n">covid19</span><span class="p">[</span><span class="s1">'fecha'</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">covid19</span><span class="p">[</span><span class="s1">'fallecimiento'</span><span class="p">])</span>
 </pre></div>
 </div>
 </div>
@@ -12956,12 +12956,12 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [55]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [79]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Extraer el año y el mes</span>
-<span class="n">fallecidos</span><span class="p">[</span><span class="s1">'año'</span><span class="p">]</span> <span class="o">=</span> <span class="n">fallecidos</span><span class="p">[</span><span class="s1">'fecha'</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">year</span>
-<span class="n">fallecidos</span><span class="p">[</span><span class="s1">'mes'</span><span class="p">]</span> <span class="o">=</span> <span class="n">fallecidos</span><span class="p">[</span><span class="s1">'fecha'</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">month</span>
+<span class="n">covid19</span><span class="p">[</span><span class="s1">'año'</span><span class="p">]</span> <span class="o">=</span> <span class="n">covid19</span><span class="p">[</span><span class="s1">'fecha'</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">year</span>
+<span class="n">covid19</span><span class="p">[</span><span class="s1">'mes'</span><span class="p">]</span> <span class="o">=</span> <span class="n">covid19</span><span class="p">[</span><span class="s1">'fecha'</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">month</span>
 </pre></div>
 </div>
 </div>
@@ -12972,11 +12972,11 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [56]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [80]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Agrupar por mes y año, y contar los fallecidos</span>
-<span class="n">reporte_mensual</span> <span class="o">=</span> <span class="n">fallecidos</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">'año'</span><span class="p">,</span> <span class="s1">'mes'</span><span class="p">])</span><span class="o">.</span><span class="n">size</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'fallecidos'</span><span class="p">)</span>
+<span class="n">reporte_mensual</span> <span class="o">=</span> <span class="n">covid19</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">'año'</span><span class="p">,</span> <span class="s1">'mes'</span><span class="p">])</span><span class="o">.</span><span class="n">size</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">'fallecidos'</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -12987,7 +12987,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [57]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [82]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">reporte_mensual</span>
@@ -13001,9 +13001,9 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[57]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[82]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div class="colab-df-container" id="df-4a7994ac-a545-4e32-b448-d2f5d59a0095">
+<div class="colab-df-container" id="df-af1669e6-5ac0-4040-a7ad-12542446fbf9">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -13327,7 +13327,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 <div class="colab-df-buttons">
 <div class="colab-df-container">
-<button class="colab-df-convert" onclick="convertToInteractive('df-4a7994ac-a545-4e32-b448-d2f5d59a0095')" style="display:none;" title="Convert this dataframe to an interactive table.">
+<button class="colab-df-convert" onclick="convertToInteractive('df-af1669e6-5ac0-4040-a7ad-12542446fbf9')" style="display:none;" title="Convert this dataframe to an interactive table.">
 <svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
 <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
 </svg>
@@ -13374,12 +13374,12 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
   </style>
 <script>
       const buttonEl =
-        document.querySelector('#df-4a7994ac-a545-4e32-b448-d2f5d59a0095 button.colab-df-convert');
+        document.querySelector('#df-af1669e6-5ac0-4040-a7ad-12542446fbf9 button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-4a7994ac-a545-4e32-b448-d2f5d59a0095');
+        const element = document.querySelector('#df-af1669e6-5ac0-4040-a7ad-12542446fbf9');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -13397,8 +13397,8 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
       }
     </script>
 </div>
-<div id="df-093abb82-b855-4ee1-b177-837473e3e2b2">
-<button class="colab-df-quickchart" onclick="quickchart('df-093abb82-b855-4ee1-b177-837473e3e2b2')" style="display:none;" title="Suggest charts">
+<div id="df-82aa30ad-c325-418d-aeb2-a5b7cf818089">
+<button class="colab-df-quickchart" onclick="quickchart('df-82aa30ad-c325-418d-aeb2-a5b7cf818089')" style="display:none;" title="Suggest charts">
 <svg height="24px" viewbox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
 <g>
 <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></path>
@@ -13511,13 +13511,13 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
     }
     (() => {
       let quickchartButtonEl =
-        document.querySelector('#df-093abb82-b855-4ee1-b177-837473e3e2b2 button');
+        document.querySelector('#df-82aa30ad-c325-418d-aeb2-a5b7cf818089 button');
       quickchartButtonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
     })();
   </script>
 </div>
-<div id="id_25a3a889-6d45-411f-9e37-1529f45d2ec8">
+<div id="id_c54a2819-5095-434e-b0e7-f854b1dc717d">
 <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -13557,7 +13557,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_25a3a889-6d45-411f-9e37-1529f45d2ec8 button.colab-df-generate');
+        document.querySelector('#id_c54a2819-5095-434e-b0e7-f854b1dc717d button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
@@ -13578,11 +13578,11 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [58]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [84]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Agrupar por año, mes y tipo de muerte, y contar los fallecidos</span>
-<span class="n">reporte_tipo_muerte</span> <span class="o">=</span> <span class="n">fallecidos</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">'año'</span><span class="p">,</span> <span class="s1">'mes'</span><span class="p">,</span> <span class="s1">'criterio'</span><span class="p">])</span><span class="o">.</span><span class="n">size</span><span class="p">()</span><span class="o">.</span><span class="n">unstack</span><span class="p">(</span><span class="n">fill_value</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="n">reporte_tipo_muerte</span> <span class="o">=</span> <span class="n">covid19</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">'año'</span><span class="p">,</span> <span class="s1">'mes'</span><span class="p">,</span> <span class="s1">'criterio'</span><span class="p">])</span><span class="o">.</span><span class="n">size</span><span class="p">()</span><span class="o">.</span><span class="n">unstack</span><span class="p">(</span><span class="n">fill_value</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -13593,11 +13593,10 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [59]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [83]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Mostrar el reporte por tipo de muerte</span>
-<span class="n">reporte_tipo_muerte</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">reporte_tipo_muerte</span>
 </pre></div>
 </div>
 </div>
@@ -13608,9 +13607,9 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[59]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[83]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div class="colab-df-container" id="df-28fa44cb-fd07-414d-aad6-4d292f015e38">
+<div class="colab-df-container" id="df-64797ff0-5845-4104-874a-cb7f6580bceb">
 <div>
 <style scoped="">
     .dataframe tbody tr th:only-of-type {
@@ -14334,7 +14333,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 <div class="colab-df-buttons">
 <div class="colab-df-container">
-<button class="colab-df-convert" onclick="convertToInteractive('df-28fa44cb-fd07-414d-aad6-4d292f015e38')" style="display:none;" title="Convert this dataframe to an interactive table.">
+<button class="colab-df-convert" onclick="convertToInteractive('df-64797ff0-5845-4104-874a-cb7f6580bceb')" style="display:none;" title="Convert this dataframe to an interactive table.">
 <svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
 <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
 </svg>
@@ -14381,12 +14380,12 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
   </style>
 <script>
       const buttonEl =
-        document.querySelector('#df-28fa44cb-fd07-414d-aad6-4d292f015e38 button.colab-df-convert');
+        document.querySelector('#df-64797ff0-5845-4104-874a-cb7f6580bceb button.colab-df-convert');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
       async function convertToInteractive(key) {
-        const element = document.querySelector('#df-28fa44cb-fd07-414d-aad6-4d292f015e38');
+        const element = document.querySelector('#df-64797ff0-5845-4104-874a-cb7f6580bceb');
         const dataTable =
           await google.colab.kernel.invokeFunction('convertToInteractive',
                                                     [key], {});
@@ -14404,8 +14403,8 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
       }
     </script>
 </div>
-<div id="df-7f620c7f-2c65-4fc3-b44c-c4c18b5a0fd4">
-<button class="colab-df-quickchart" onclick="quickchart('df-7f620c7f-2c65-4fc3-b44c-c4c18b5a0fd4')" style="display:none;" title="Suggest charts">
+<div id="df-e9dfd7b8-f625-4d67-8572-6ead9f9e06ed">
+<button class="colab-df-quickchart" onclick="quickchart('df-e9dfd7b8-f625-4d67-8572-6ead9f9e06ed')" style="display:none;" title="Suggest charts">
 <svg height="24px" viewbox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
 <g>
 <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></path>
@@ -14518,13 +14517,13 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
     }
     (() => {
       let quickchartButtonEl =
-        document.querySelector('#df-7f620c7f-2c65-4fc3-b44c-c4c18b5a0fd4 button');
+        document.querySelector('#df-e9dfd7b8-f625-4d67-8572-6ead9f9e06ed button');
       quickchartButtonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
     })();
   </script>
 </div>
-<div id="id_bd1cb8f0-bbf1-4ef2-a712-03ff0265cad2">
+<div id="id_47130289-000e-4b26-a557-d0a0a7e05b4a">
 <style>
       .colab-df-generate {
         background-color: #E8F0FE;
@@ -14564,7 +14563,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <script>
       (() => {
       const buttonEl =
-        document.querySelector('#id_bd1cb8f0-bbf1-4ef2-a712-03ff0265cad2 button.colab-df-generate');
+        document.querySelector('#id_47130289-000e-4b26-a557-d0a0a7e05b4a button.colab-df-generate');
       buttonEl.style.display =
         google.colab.kernel.accessAllowed ? 'block' : 'none';
 
